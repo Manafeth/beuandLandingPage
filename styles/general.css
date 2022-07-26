@@ -1,0 +1,231 @@
+/**=====================
+ css start
+==========================**/
+/*font */
+@import url("https://fonts.googleapis.com/css2?family=Neucha&family=Poppins:wght@300;400;800;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* font-size: 10px; */
+
+  /* 10px / 16px = 0.625 = 62.5% */
+  /* Percentage of user's browser font-size setting */
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  /* Only works if there is nothing absolutely positioned in relation to body */
+  overflow-x: hidden;
+}
+
+:root {
+  --color-primary: #394032;
+  --color-secondry: #d1e8ff;
+  --color-third: #f4be5e;
+  --color-fourth: #F3F5F0;
+  --color-bg: #f7fdff;
+  --color-white: #fff;
+  --color-btn:#FAFAFAB3;
+  --color-white-secondary: #fafafa;
+  --color-black-primary: #000000;
+  --color-black-secondary:#1F1F1F;
+  --color-black-third:#1F1F1FB3;
+  --color-black: #242424;
+  --color-black-secondary: #1c1d21;
+  --color-black-pricing:#161616;
+  --color-black-desc:#333333;
+  --color-gray: #757095;
+  --color-gray-secondary: #3b3a40;
+  --color-dark-gray: #64626a;
+  --color-font: #181433;
+  --color-toggle: #67c893;
+}
+
+/**************************/
+/* GENRAL REUSABLE COMPONENTS */
+/**************************/
+
+
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
+  font-weight: 800;
+  color: var(--color-black);
+}
+
+.heading-primary {
+  font-size: 2.8rem;
+  line-height: 1.05;
+  margin-bottom: 1.3rem;
+}
+
+.heading-secondary {
+  font-size: 4.8rem;
+  line-height: 1.2;
+  margin-bottom: 5rem;
+}
+
+.heading-tertiary {
+  font-size: 3.2rem;
+  line-height: 1.2;
+  margin-bottom: 2.2rem;
+}
+
+.sub-heading {
+  display: block;
+  font-size: 4rem;
+  font-weight: bold;
+  color: var(--color-black-primary);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.paragraph {
+  display: block;
+  font-size: 2rem;
+  color:var(--color-gray)
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding: 1.5rem 3rem;
+  border-radius: 12px;
+
+  /* Only necessary for .btn */
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+
+  /* Put transition on original "state" */
+  /* transition: background-color 0.3s; */
+  transition: all 0.3s;
+}
+
+.btn--full:link,
+.btn--full:visited {
+  background-color: var(--color-primary);
+  color: #fff;
+}
+
+.btn--full:hover,
+.btn--full:active {
+  background-color: var(--color-secondry);
+  color: var(--color-primary);
+}
+.btn--full-width:link,
+.btn--full-width:visited {
+  background-color: var(--color-primary);
+  color: #fff;
+  width: 100%;
+}
+
+.btn--full-width:hover,
+.btn--full-width:active {
+  background-color: var(--color-secondry);
+  color: var(--color-primary);
+}
+.btn--full-plus:link,
+.btn--full-plus:visited {
+  background-color: var(--color-third);
+  color: var(--color-black);
+  width: 100%;
+}
+
+.btn--full-plus:hover .btn--full-plus:active {
+  background-color: var(--color-secondry);
+  color: var(--color-primary);
+}
+
+.btn--outline:link,
+.btn--outline:visited {
+  background-color: #fff;
+  color: #555;
+}
+
+.btn--outline:hover,
+.btn--outline:active {
+  background-color: #fdf2e9;
+
+  /* border: 3px solid #fff; */
+
+  /* Trick to add border inside */
+  box-shadow: inset 0 0 0 3px #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.link:link,
+.link:visited {
+  display: inline-block;
+  color: var(--color-primary);
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 2px;
+  transition: all 0.3s;
+}
+
+.link:hover,
+.link:active {
+  color: var(--color-primary);
+  border-bottom: 1px solid transparent;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  border-top: 1px solid #eee;
+  padding-top: 1.2rem;
+}
+
+.list-item {
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  line-height: 1.2;
+}
+
+.list-icon {
+  width: 3rem;
+  height: 3rem;
+  color: var(--color-primary);
+}
+
+
+
+/* HELPER/SETTINGS CLASSES */
+.margin-right-sm {
+  margin-right: 1.6rem !important;
+}
+
+.margin-bottom-md {
+  margin-bottom: 4.8rem !important;
+}
+.margin-bottom {
+  margin-bottom: 4.8rem !important;
+}
+.margin-top {
+  margin-top: 6rem !important;
+}
+
+.center-text {
+  text-align: center;
+}
+
+strong {
+  font-weight: 500;
+}

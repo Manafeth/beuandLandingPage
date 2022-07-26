@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="28" height="24" viewBox="0 0 28 24">
+  <g id="Group_879" data-name="Group 879" transform="translate(-241 -29)">
+    <rect id="Bounding_box" data-name="Bounding box" width="24" height="24" transform="translate(243 29)" fill="rgba(255,255,255,0)"/>
+    <path id="Icon_color" data-name="Icon color" d="M0,10.5V9.1a.7.7,0,0,1,.7-.7H23.338l-6.23-6.216a.7.7,0,0,1,0-.994L18.1.207a.7.7,0,0,1,.994,0l8.6,8.582A1.05,1.05,0,0,1,28,9.531v.532a1.078,1.078,0,0,1-.308.742l-8.6,8.582a.7.7,0,0,1-.994,0l-.994-.994a.686.686,0,0,1,0-.98l6.23-6.216H.7A.7.7,0,0,1,0,10.5Z" transform="translate(241 31.002)" fill="#010101"/>
+  </g>
+</svg>

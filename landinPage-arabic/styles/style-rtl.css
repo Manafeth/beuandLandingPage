@@ -1,0 +1,88 @@
+
+.about-card{
+    position: absolute;
+    width: 700px;
+    height: 550px;
+    top:60px;
+    right:30px;
+    border: none;
+  }
+  .download-bg-rtl {
+    position: absolute;
+    top: -208px;
+    left: 100px;
+}
+.tap-icon-rtl {
+    position: absolute;
+  }
+
+.urway-icon-rtl {
+    position: absolute;
+    bottom: 97px;
+    left: 639px;
+  }
+  .stc-icon-rtl {
+    position: absolute;
+    bottom: -22px;
+    left: 559px;
+  }
+  .barq-icon-rtl {
+    position: absolute;
+    left: 500px;
+    top: 70px;
+  }
+  .spl-icon-rtl {
+    position: absolute;
+    top: 217px;
+    left: 418px;
+  }
+  .aramex-icon-rtl {
+    position: absolute;
+    left: 358px
+  }
+  .glt-icon-rtl {
+    position: absolute;
+    bottom: 103px;
+    left: 284px;
+  }
+  .express-icon-rtl {
+    position: absolute;
+    bottom: -20px;
+    left: 294px;
+  }
+  .storage-icon-rtl {
+    position: absolute;
+    left: 92px;
+    top: 38px;
+  }
+  .box-icon-rtl {
+    position: absolute;
+    bottom: 15px;
+      left: 100px;
+  }
+
+  .main-content-rtl {
+    transform: translate(-113%,30%);
+  }
+  .pricing-bell {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  
+    max-width: 32%;
+    margin: auto;
+  }
+  @media (max-width: 480px) {
+    .download-bg-rtl{
+      display:none;
+    }
+    .main-content-rtl {
+      transform: translate(-9%,1%);
+    }
+    .pricing-bell {
+      flex-wrap: wrap;
+    }
+    .about-card{
+      right:0px;
+    }
+  }
