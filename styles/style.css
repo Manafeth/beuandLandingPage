@@ -43,6 +43,19 @@ html, body, * {
 .btn-main {
   background-color: var(--color-btn);
 }
+.translate-bg{
+  background-color:#242820;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 15px;
+  margin-top: 20px;
+}
+.dropdown-content a{
+  color:var(--color-black-primary);
+}
 /* end of NAVBAR SECTION */
 
 /**************************/
@@ -102,6 +115,7 @@ position: relative;
   font-size: 5.6rem;
   text-align: center;
   padding-top: 10rem;
+  margin-bottom: 8rem;
 }
 .left-pattern {
   position: absolute;
@@ -419,6 +433,7 @@ label:active:after {
   max-width: 170rem;
   padding: 0 3.2rem;
   margin: 0 auto;
+  position: relative;
 }
 .section-plateform {
   background-image: url("../images/plateform-bg.svg");
@@ -441,6 +456,9 @@ label:active:after {
   margin-top: 60px;
   font-weight: 800;
   color: var(--color-black);
+}
+.plateform-content{
+  z-index:200;
 }
 .tap-icon {
   position: absolute;
@@ -621,10 +639,86 @@ tr:nth-child(even) {
   font-size: 1.6rem;
   color: var(--color-black-desc);
 }
+/* media queries */
 
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) { 
-  
+@media (max-width: 768px) { 
+  .navbar {
+    background-color:#2e3226;
+  }
+  .navbar-light .navbar-toggler{
+    background-color: white;
+  }
+  .feature{
+    flex-wrap:wrap;
+  }
+  .pattern-one,.pattern-two{
+    display:none;
+  }
+  .pricing-bell{
+    max-width: 61%;
+  }
+  .plan-price {
+    font-size: 2.8rem;
+  }
+  .plan-price span {
+    font-size: 2rem;
+}
+.plan-content {
+  right: 47px;
+}
+.plan-btn{
+  font-size:14px;
+}
+.download-bg{
+  display: none;
+}
+.download-title {
+  font-size: 2.6rem;
+  padding: 4rem 0rem 5rem 3re
+}
+.footer-heading {
+  font-size: 1.8rem;
+}
+.main-content-text {
+  display: none;
+ }
+ .main-content-title {
+  width: 176%;
+}
+.main-bg {
+  height: 85vh;
+}
+.btn-main{
+  transform: translate(1px, 124px);
+}
+.overlay {
+  position: absolute; /* Sit on top of the page content */
+  display: block; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+}
+.plateform-container {
+ 
+ padding: 0;
+}
+.integrated-description{
+  color:var(--color-white)
+}
+.heading-plateform{
+  color:var(--color-white)
+}
+.plateform-btn{
+  text-align:center;
+  margin-top:3rem;
+}
  }
 
 @media (max-width: 480px) {
@@ -634,15 +728,15 @@ tr:nth-child(even) {
   .navbar-light .navbar-toggler{
     background-color: white;
   }
-  .main-content{
-    transform: translate(0,0);
+  .main-content {
+    transform: translate(9%,26%)
   }
   .main-content-title {
     font-size: 2.8rem;
     width: 200%;
   }
   .main-content-text {
-    width:200%;
+   display: none;
   }
   .about-title{
     font-size: 3rem;
@@ -656,14 +750,16 @@ tr:nth-child(even) {
     flex-wrap: wrap;
   }
   .discover-title {
-    font-size: 4.6rem;
+    font-size: 3.6rem;
+    margin-bottom:8.5rem;
   }
   .pricing-bell {
     flex-wrap: wrap;
+    max-width: 32%;
   }
-  .plateform-images{
+  /* .plateform-images{
     display: none;
-  }
+  } */
   .heading-plateform{
     font-size: 2.2rem;
     margin-top: 3rem;
@@ -673,6 +769,7 @@ tr:nth-child(even) {
   }
   .download-section {
     margin-top: 10px;
+    height: 50%;
   }
   .download-title {
     font-size: 2.6rem;
@@ -680,7 +777,7 @@ tr:nth-child(even) {
   }
   .download-image{
     flex-wrap: wrap;
-    width:50%
+    width:48%
   }
   .download-image img{
     margin-bottom: 1rem;
@@ -710,18 +807,63 @@ tr:nth-child(even) {
   }
   .btn-main{
     width:150%;
+    transform: translate(1px, 164px);
   }
   .plan-price {
-    font-size: 3rem;
+    font-size: 2rem;
   }
   .plan-price span{
     font-size: 2rem;
   }
+  .discover-pattern {
+    display:none;
+}
+.pricing-heading {
+  font-size: 2.5rem;
+}
+.download-title {
+  padding: 6rem 2rem 2rem 3rem;
+}
+.main-bg {
+  height: 80vh;
+}
+/* overlay */
+.overlay {
+  position: absolute; /* Sit on top of the page content */
+  display: block; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+}
+.plateform-container {
+ 
+  padding: 0;
+ }
+ .integrated-description{
+  color:var(--color-white)
+}
+.heading-plateform{
+  color:var(--color-white)
+}
+.plateform-btn{
+  text-align:center;
+  margin-top:8rem;
+}
+.aramex-icon {
+  right: -1px;
+  bottom: 126px;
+}
+.tap-icon {
+  display:none;
+}
 }
 /* toggle */
-
-
-
 
 input,
 label {
@@ -782,7 +924,7 @@ label {
   background-color: white;
   -webkit-transition: 0.4s;
 
-  box-shadow: 2px 6px 25px #1e2321;
+  box-shadow: 2px 6px 25px var(--color-dark-gray);
   transform: translate(0px, 0px);
   transition: 0.6s ease transform, 0.6s box-shadow;
 }
@@ -827,3 +969,4 @@ input:checked + .slider:before {
   justify-content: center;
   flex-wrap: wrap;
 }
+

@@ -62,14 +62,14 @@
   }
 
   .main-content-rtl {
-    transform: translate(-113%,30%);
+    transform: translate(-113%,40%);
   }
-  .pricing-bell {
+ 
+  .pricing-bell-rtl {
     display: flex;
     justify-content: space-around;
     align-items: center;
-  
-    max-width: 32%;
+    max-width: 28%;
     margin: auto;
   }
   @media (max-width: 480px) {
@@ -84,5 +84,9 @@
     }
     .about-card{
       right:0px;
+    }
+    .pricing-bell-rtl {
+      flex-wrap:wrap;
+      max-width: 16%;
     }
   }

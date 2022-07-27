@@ -15,9 +15,7 @@
   rel="stylesheet"
   href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&family=Lora:wght@500&family=Neucha&family=Poppins:wght@300;400;800;900&display=swap" rel="stylesheet">
+
 </head>
 
 <body dir="rtl">
@@ -26,7 +24,7 @@
 <header class="main-bg">
   <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container mt-3">
-      <a class="navbar-brand" href="./index.html"> <img src="images/Logo-White.png" /></a>
+      <a class="navbar-brand" href="./index-rtl.html"> <img src="images/Logo-White.png" /></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -39,10 +37,19 @@
             <a class="nav-link text-light nav-text" href="#how-it-work">كيف تعمل</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-light nav-text" href="./pricing.html">التسعير</a>
+            <a class="nav-link text-light nav-text" href="./pricing-rtl.html">التسعير</a>
           </li>
         </ul>
-        <form class="d-flex">
+        <form class="d-flex align-items-end">
+          <div class="dropdown">
+            <div class=" translate-bg" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="images/translate.svg">
+            </div>
+            <ul class="dropdown-menu">
+              <li><button class="dropdown-item dropdown-content"><a href="./index-rtl.html">Arabic</a></button></li>
+              <li><button class="dropdown-item dropdown-content"><a href="./index.html">English</a></button></li>
+            </ul>
+          </div>
           <button class="get-started btn text-light rounded-0" type="button">
             تسجيل الدخول
           </button>
@@ -60,7 +67,7 @@
       <p class="card-text main-content-text">
         استمتع بتجربة مجانية لمدة 30 يومًا. لا حاجة لبطاقة ائتمان. تجربتك خير دليل على كفاءة خدماتنا.
       </p>
-      <a href="#!" class="get-started btn btn-main text-dark rounded-0">ابدأ الإصدار  المجاني  	&nbsp;	&nbsp;<img src="images/right-arrow.svg">
+      <a href="#!" class="get-started btn btn-main text-dark rounded-0">ابدأ الإصدار  المجاني  	&nbsp;	&nbsp;<img src="images/left-arrow.svg">
 
       </a>
     </div>
@@ -71,6 +78,172 @@
 </div>
 </header>
 <!-- end of navbar -->
+
+  <!-- About section -->
+ <section class="section-about">
+  <div class="about-container">
+    <div class="row">
+      <div class="col-md-2"></div>
+      <div class="col-md-10">
+        <img src="images/about-section.png" style="height: 629px;">
+      </div>
+      <div class="card about-card">
+        <div class="card-body">
+          <div class=" p-3">
+          <h5 class="card-title about-title">حول Beuand</h5>
+          <p class="card-text about-text">شركة سعودية متخصصة في التجارة الإلكترونية من خلال تقديم مجموعة من الخدمات المهنية التي تساعد تجار التجزئة على بناء متاجرهم على الإنترنت ، وبدء أعمالهم التجارية ، وبيع المنتجات عبر الإنترنت.</p>
+          <p class="card-text about-text">تمكّن حلول التجارة الإلكترونية من Beuand تجار التجزئة من امتلاك متاجرهم الخاصة عبر الإنترنت لبيع المنتجات بالإضافة إلى الحلول المتكاملة الأخرى التي تجعل الأعمال التجارية تسير بسلاسة.</p>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+ </section>
+   <!-- end of About section -->
+  <!-- Features section -->
+  <section id="features-section" class="feature-section">
+    <div class="container">
+      <h2 class="feature-header">سمات</h2>
+    </div>
+    <div class="container">
+      <div class="feature">
+       
+          <div class="feature-card">
+            <div class="feature-bg">
+            <img class="how-it-icon" src="images/puzzle.png" />
+          </div>
+          <div class="feature-content">
+            <h4 class="title">متجر متوافق</h4>
+            <p>نحن نوصلك بالعملاء بغض النظر عن الجهاز أو النظام الأساسي الذي يستخدمونه.</p>
+
+          </div>
+          </div>
+       
+       
+          <div class="feature-card">
+            <div class="feature-bg">
+            <img class="how-it-icon" src="images/security.png" />
+          </div>
+          <div class="feature-content">
+            <h4 class="title">المدفوعات عبر الإنترنت</h4>
+            <p>تلقي المدفوعات من خلال طرق مختلفة عبر الإنترنت والدفع الافتراضي لدينا يسمى Urway.</p>
+
+          </div>
+          </div>
+    
+        
+          <div class="feature-card">
+            <div class="feature-bg">
+            <img class="how-it-icon" src="images/fast.png" />
+          </div>
+          <div class="feature-content">
+            <h4 class="title">الشحن والتسليم</h4>
+            <p>شحن وتسليم المنتجات بطريقتنا الافتراضية التي تسمى GLT Express وطرق أخرى.</p>
+
+          </div>
+          </div>
+     
+       
+          <div class="feature-card">
+            <div class="feature-bg">
+            <img class="how-it-icon" src="images/key-performance-indicator.png" />
+          </div>
+          <div class="feature-content">
+            <h4 class="title">التقارير ومؤشرات الأداء الرئيسية</h4>
+            <p>يمكنك اتخاذ قرار ينمي متجرك عبر الإنترنت بناءً على التقارير التفصيلية ومؤشرات الأداء الرئيسية.</p>
+
+          </div>
+          </div>
+      
+          <div class="feature-card">
+            <div class="feature-bg">
+            <img class="how-it-icon" src="images/languages.png" />
+          </div>
+          <div class="feature-content">
+            <h4 class="title">متجر متعدد اللغات</h4>
+            <p>يمكنك الوصول إلى عملاء مختلفين بكفاءة من خلال إصدارات المتاجر متعددة اللغات.</p>
+
+          </div>
+          </div>
+       
+      </div>
+    </div>
+  </div>
+  </section>
+
+    <!--how it works section-->
+    <section id="how-it-work" class="how-itworks">
+      <div class="container">
+        <p class="sub-heading text-center">كيف تعمل؟</p>
+        <p class="paragraph text-center margin-bottom">
+          تعرف على كيفية عمل Beauand ، من عملية التسجيل حتى الخطوة الأخيرة.
+        </p>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card-bg text-center">
+              <img class="how-it-icon" src="images/create_acoount_icon.png" />
+            </div>
+            <div class="text-center">
+              <p class="title">إصنع حساب</p>
+              <p class="sub-title">
+                طريقة بسيطة وسهلة لإنشاء حسابك وإعداد نوع متجرك.
+              </p>
+            </div>
+            <img src="images/pattern_one.svg" class="pattern-one" alt="" />
+          </div>
+          <div class="col-md-4">
+            <div class="card-bg text-center">
+              <img class="how-it-icon" src="images/shopping_store_icon.png" />
+            </div>
+            <div class="text-center">
+              <p class="title">قم بإعداد متجرك</p>
+              <p class="sub-title">
+                ابدأ في إدراج منتجاتك / خدماتك وفئاتك وابدأ التشغيل عندما تكون جاهزًا.
+              </p>
+            </div>
+            <img src="images/pattern_two.svg" class="pattern-two" alt="" />
+          </div>
+          <div class="col-md-4">
+            <div class="card-bg text-center">
+              <img class="how-it-icon" src="images/start_selling_icon.png" />
+            </div>
+            <div class="text-center">
+              <p class="title">ابدأ بالبيع</p>
+              <p class="sub-title">
+                بعد إعداد متجرك وإدراج العناصر الخاصة بك ، يمكنك البدء في بيع العناصر على الفور.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+    
+
+     <!--discover section-->
+     <section class="section-discover">
+      <div class="container">
+        <img
+          src="images/discover_pattern.svg"
+          class="discover-pattern"
+          alt=""
+        />
+        <div class="row">
+          <div class="col">
+        <h2 class="discover-title mb-5">
+          اكتشف طريقة أفضل لإدارة التجارة الإلكترونية.
+        </h2>
+        <img src="images/left_pattern.svg" class="left-pattern" alt="" />
+        <img src="images/right_pattern.svg" class="right-pattern" alt="" />
+        <div class="discover-btn">
+          <a href="#" class="main-nav-link nav-discover">نبدأ الآن</a>
+        </div>
+      </div>
+      </div>
+      </div>
+    </section>
      <!--pricing section-->
      <section class="section-pricing">
       <div class="container">
@@ -81,13 +254,13 @@
         <p class="pricing-description">
           نسخة تجريبية مجانية لمدة 30 يومًا ، يمكنك الإلغاء في أي وقت. بطاقة الإئتمان غير مطالب بها.
         </p>
-        <div class="pricing-bell">
+        <div class="pricing-bell-rtl">
           <p>الفاتورة الشهرية</p>
           <label class="switch">
             <input type="checkbox" id="checbox" onclick="check()" ; />
             <span class="slider round"></span>
           </label>
-          <p>الفاتورة السنوية </p>
+          <p>بيل سنويا</p>
           <span class="underlined">وفر 15٪</span>
         </div>
       </div>
@@ -192,108 +365,13 @@
       </div>
     </div>
     </section>
-      <!-- core section -->
-      <div class="pricing-plan-header">ستحب هذه الميزات الأساسية</div>
-      <div class="container">
-        <!-- Core Table -->
-        <table>
-          <tr>
-            <td class="pricing-plan-title">الميزة الأساسية</td>
-            <td class="pricing-plan-desc">
-              هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن استخدامن
-            </td>
-          </tr>
-          <tr>
-            <td class="pricing-plan-title">الميزة الأساسية</td>
-            <td class="pricing-plan-desc">
-              هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن استخدامن
-            </td>
-          </tr>
-          <tr>
-            <td class="pricing-plan-title">الميزة الأساسية</td>
-            <td class="pricing-plan-desc">
-              هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن استخدامن
-            </td>
-          </tr>
-          <tr>
-            <td class="pricing-plan-title">الميزة الأساسية</td>
-            <td class="pricing-plan-desc">
-              هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن استخدامن
-            </td>
-          </tr>
-          <tr>
-            <td class="pricing-plan-title">الميزة الأساسية</td>
-            <td class="pricing-plan-desc">
-              هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن استخدامن
-            </td>
-          </tr>
-          <tr>
-            <td class="pricing-plan-title">الميزة الأساسية</td>
-            <td class="pricing-plan-desc">
-              هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن استخدامن
-            </td>
-          </tr>
-        </table>
-        <!-- Essentail Table -->
-        <table class="essentail-table">
-          <tr>
-            <th class="essentail-header">مفرقون</th>
-            <th class="essentail-header">ضروري</th>
-            <th class="essentail-header">احترافي</th>
-            <th class="essentail-header">الممتازة</th>
-          </tr>
-          <tr>
-            <td class="pricing-plan-title">ميزة المقارنة</td>
-            <td class="pricing-plan-title">غير محدود</td>
-            <td class="pricing-plan-title">غير محدود</td>
-            <td class="pricing-plan-title">غير محدود</td>
-          </tr>
-          <tr>
-            <td class="pricing-plan-title">ميزة المقارنة</td>
-            <td class="pricing-plan-title">غير محدود</td>
-            <td class="pricing-plan-title">غير محدود</td>
-            <td class="pricing-plan-title">غير محدود</td>
-          </tr>
-          <tr>
-            <td class="pricing-plan-title">ميزة المقارنة</td>
-            <td class="pricing-plan-title">
-              <img src="images/right_icon.svg" alt="" />
-            </td>
-            <td class="pricing-plan-title">
-              <img src="images/right_icon.svg" alt="" />
-            </td>
-            <td class="pricing-plan-title">قابل للتخصيص</td>
-          </tr>
-          <tr>
-            <td class="pricing-plan-title">ميزة المقارنة</td>
-            <td class="pricing-plan-title">-</td>
-            <td class="pricing-plan-title">
-              <img src="images/right_icon.svg" alt="" />
-            </td>
-            <td class="pricing-plan-title">
-              <img src="images/right_icon.svg" alt="" />
-            </td>
-          </tr>
-          <tr>
-            <td class="pricing-plan-title">ميزة المقارنة</td>
-            <td class="pricing-plan-title">-</td>
-            <td class="pricing-plan-title">
-              <img src="images/right_icon.svg" alt="" />
-            </td>
-            <td class="pricing-plan-title">
-              <img src="images/right_icon.svg" alt="" />
-            </td>
-          </tr>
-        </table>
-      </div>
-    </section>
      <!--plateform section-->
      <div class="plateform-container">
       <div class="row">
      <div class="section-plateform">
       <div class="container">
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-6 plateform-content">
           <h3 class="heading-plateform">
             منصتنا تأتي مع نغمات تكامل.
           </h3>
@@ -302,10 +380,13 @@
             عزز عملك ومنحك خيار الاختيار من بينها
             لهم ما هو الأفضل لك.
           </p>
+          <div class="plateform-btn">
           <a class="btn btn--full" href="#">كن شريكا</a>
+        </div>
         </div>
        
         <div class="col-md-6">
+          <div class="overlay"></div>
         <div class="plateform-images">
           <img src="images/tap_icon.png" class="tap-icon-rtl" alt="tap" />
           <img src="images/urway_icon.png" class="urway-icon-rtl" alt="urway" />
@@ -337,7 +418,26 @@
     </div>
   </div>
 </div>
+<!-- download section -->
+<section  class="plateform-container mt-5">
+  <div class="download-section">
+    <div class="row">
+  <div class="discover-content col-md-6">
+      <div class="download-title mb-5">
+        قم بتنزيل تطبيق Beuand للمسؤول والعملاء
+      </div>
+      <div class="d-flex justify-content-between p-5 download-image">
+        <img src="images/apple-store.png" alt="">
+        <img src="images/google-store.png" alt="">
+      </div>
+  </div>
+</div>
+  <div class="download-bg-rtl">
+  <img src="images/download-section.png" alt="">
+</div>
+  </div>
 
+</section>
       <!--Footer Section-->
       <footer class="footer mt-5">
         <div class="container">
@@ -350,7 +450,7 @@
                 </a>
               </div>
                 <p class="footer-text">
-                  هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن استخدام "هنا يوجد محتوى نصي، هنا يوجد محتوى نصي" فتجعلها تبدو (أي الأحرف) وكأنها نص مقروء. العديد من برامح النشر المكتبي وبرامح
+                  beuand هي شركة سعودية ذات رؤية عالمية تسعى لمساعدة قطاع التجزئة على بدء أعمال التجارة الإلكترونية الخاصة به من خلال توفير حلول متنوعة تمكن أصحاب المتاجر الإلكترونية من إطلاق متاجرهم وإدارتها بسلاسة.
                 </p>
               </div>
             </div>
