@@ -23,7 +23,7 @@ html, body, * {
   background-size: cover;
 }
 .nav-text{
-  font-size: 2.4rem;
+  font-size: 1.4rem;
 }
 .main-content {
   transform: translate(12%,30%);
@@ -272,15 +272,15 @@ margin-bottom: 20px;
   display: flex;
   justify-content: space-around;
   align-items: center;
-
   max-width: 32%;
   margin: auto;
+  align-items: center;
 }
 .pricing-bell p {
   font-size: 1.8rem;
   color: var(--color-dark-gray);
 }
-.pricing-bell span {
+.pricing-bell .underlined {
   font-size: 1.8rem;
   color: var(--color-primary);
 }
@@ -386,17 +386,6 @@ label {
   position: relative;
 }
 
-/* label:after {
-  content: "";
-  position: absolute;
-  top: 3px;
-  left: 4px;
-  width: 30px;
-  height: 30px;
-  background: var(--color-toggle);
-  border-radius: 90px;
-  transition: 0.3s;
-} */
 
 input:checked + label {
   background: #bada55;
@@ -527,17 +516,17 @@ background: linear-gradient(90deg, rgba(106,112,99,1) 0%, rgba(82,89,75,1) 50%, 
   height: 600px;
  border-radius: 20px;
  position: relative;
- margin-top: 372px;
+ margin-top: 180px;
  margin-bottom: 14rem;
 }
 .download-bg{
   position: absolute;
-  top: -208px;
-  right: 100px;
+  top: -116px;
+  right: 3px;
 }
 .download-title{
   color: var(--color-white);
-    font-size: 4.6rem;
+    font-size: 4rem;
     text-align: center;
     padding: 15rem 0rem 5rem 3rem;
     text-align: left;
@@ -578,6 +567,8 @@ background: linear-gradient(90deg, rgba(106,112,99,1) 0%, rgba(82,89,75,1) 50%, 
   font-size: 1.7rem;
   color: var(--color-gray);
   text-align: justify;
+  width:70%;
+  letter-spacing: 1px;
 }
 .social-links {
   list-style: none;
@@ -719,6 +710,9 @@ tr:nth-child(even) {
   text-align:center;
   margin-top:3rem;
 }
+.discover-content{
+  width:100%;
+}
  }
 
 @media (max-width: 480px) {
@@ -777,11 +771,10 @@ tr:nth-child(even) {
   }
   .download-image{
     flex-wrap: wrap;
-    width:48%
   }
   .download-image img{
     margin-bottom: 1rem;
-    width: 280%;
+
   } 
   .footer-copyright {
     flex-wrap: wrap;
@@ -862,6 +855,9 @@ tr:nth-child(even) {
 .tap-icon {
   display:none;
 }
+.footer-text{
+width:98%;
+}
 }
 /* toggle */
 
@@ -924,7 +920,7 @@ label {
   background-color: white;
   -webkit-transition: 0.4s;
 
-  box-shadow: 2px 6px 25px var(--color-dark-gray);
+  box-shadow: .5px .5px .5px var(--color-dark-gray);
   transform: translate(0px, 0px);
   transition: 0.6s ease transform, 0.6s box-shadow;
 }

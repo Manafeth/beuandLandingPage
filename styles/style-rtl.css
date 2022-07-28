@@ -69,8 +69,9 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    max-width: 28%;
+    max-width: 32%;
     margin: auto;
+    align-items: center;
   }
   @media (max-width: 480px) {
     .download-bg-rtl{
